@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PickForMe</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+
+<body>
+	<div class="container">
+
+		<header class="header">
+			<h1 class="logo"> PickForMe</h1>
+			<p class="tagline"> When you just can't decide</p>
+
+		</header>
+
+		<div class="input-section">
+			<div class="input-wrapper">
+				<input
+					type="text"
+					id="optionInput"
+					placeholder="Enter an option..."
+					class="option-input"
+				>
+				<button id="addBtn" class="btn-add">+</button>
+			</div>
+		</div>
+
+		<div id="optionsList" class="options-list">
+			<div class="empty-state" id="emptyState">
+				<div class="empty-icon"></div>
+				<p>Add at least 2 options to get started</p>
+			</div>
+		</div>
+
+		<button id="decideBtn" class="btn-decide" disabled>
+			DECIDE FOR ME
+		</button>
+
+		<div id="resultSection" class="result-section-hidden">
+			<div class="result-content">
+				<div class="result-emoji">
+					<h2 class="result-label">You should pick:</h2>
+					<div id="finalChoice" class="final-choice">Pizza</div>
+					<button id="tryAgainBtn" class="btn-try-again">Try Again</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</div>
+</body>
+</html>
+
